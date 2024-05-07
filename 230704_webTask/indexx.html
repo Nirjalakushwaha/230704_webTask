@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnC</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px   )" href="phone.css">
+    
+     
+   
+</head>
+<body>
+    <header>
+        <div class="main">
+        <nav>
+            <div class="icon">
+                <h2 class="logo"> Academics and Career Council</h2>
+           
+            </div>
+           
+            <div class="menu">
+                <ul>
+                   
+                    <li><a class="nav_link" href="#home">Home</a></li>
+                    <li><a class="nav_link" href="#about">About </a></li>
+                    <li><a class="nav_link" href="#Events">Events</a></li>
+                    <li><a class="nav_link" href="contactus.html">Contact </a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+        <section id = "home " class="firstSection">
+            <div class="leftSection">
+              
+                <div>The Academics and Career Council of the Indian Institute of Technology, Kanpur is a council directly placed under the Student's Gymkhana, that aims to foster all needs related to academics and research for the campus dwellers.
+                </div>
+            </div>
+            
+    
+        </section>
+
+    </div>
+    </header>
+   
+    <hr>
+    <section id="about" class="about">
+        <div class="container">
+
+            <h1 class="text-center">About us</h1>
+            <div class="card-group">
+                <div class="card">
+                   
+                    <div class="card-body">
+                        <h5 class="card-title"> UG/PG Academics</h5>
+                        <p class="card-text">The UG/PG Academics Wing plays a crucial role in managing academic affairs within the Academic and Career Council. Think of us as the bridge between the institute’s decision-makers (like professors and administrators) and the students. Our focus is on everything related to academics: course planning, curriculum, exams, and student feedback. We ensure that students’ voices are heard, policies are transparent, and academic experiences are enriching. If you have questions or concerns about your studies, we’re here to help.</p>
+                        
+                    </div>
+                </div>
+                <div class="card slide-in" id="aboutcard2">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Research</h5>
+                        <p class="card-text">“The Research Wing of our council encourages students to explore and engage in research. We want students to have the freedom to investigate various topics and discover new things. Our goal is to create an environment where curiosity and innovation thrive..</p>
+                       
+                    </div>
+                </div>
+                <div class="card slide-in" id="aboutcard3">
+                   
+                    <div class="card-body">
+                       
+                        <h5 class="card-title">
+                            International Relations</h5>
+                        <p class="card-text">The International Relations Wing closely collaborates with the Office of International Relations (OIR) at IIT Kanpur. Our primary goal is to strengthen connections between our institute and foreign institutions. We work hard to create meaningful partnerships, facilitate student exchanges, and promote cross-cultural understanding. By fostering these global relationships, we aim to enrich the academic experience for everyone involved</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Events" class="Events">
+        <div class="container">
+            <h1 class="text-center">Events</h1>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card-roll-in">
+                    <img src="irs.jpg" class="card-img-top"alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Institute Research Symposium</h5>
+                      <p class="card-text">We intend to provide a platform for students to showcase their research to the larger community. Our goal is to provide a space for students, faculty and members of the scientific community to share their cutting-edge innovations with one another</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-roll-in" id="card2service">
+                    <img src="career.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Career Connect</h5>
+                      <p class="card-text">Prestigious annual flagship event, CAREER CONNECT, where we have a mix of sessions, competitions and workshops planned for you.There will be alumni talks in which they will be sharing the ins and outs of the industry, various invaluable insights and most importantly, how you can kickstart your journey.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-roll-in">
+                    <img src="acads.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Academic Orientation</h5>
+                      <p class="card-text">At IIT Kanpur, Academic Flexibility is highly valued. It provides you with a variety of ways to learn about the topics you are interested in. Starting with choosing your preferred courses, you can choose your major through a variety of programmes, including branch change, double major, minor, dual degree, etc.We thus arranged Academic Orientation 2.0 to relieve your anxieties regarding the different academic flexibilities offered by IIT Kanpur, and inform you about your first ever Pre-registration</p>
+                    </div>
+                  </div>
+                </div>
+               
+                </div>
+              </div>
+                
+                
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container text-center">
+            <span class="text-muted footer-text">© Academic and Career Council, IIT Kanpur. All rights reserved.</span>
+        </div>
+    </footer>
+     <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav_link');
+    
+            function changeLinkState() {
+                let index = sections.length;
+    
+                while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+    
+                navLinks.forEach((link) => link.classList.remove('active'));
+                navLinks[index].classList.add('active');
+            }
+    
+            changeLinkState();
+            window.addEventListener('scroll', changeLinkState);
+        });
+    </script> 
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+.form{
+    max-width: 1000px;
+    margin: 25px;
+    padding: 50px 0px;
+}
+.form input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width:100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+}
+.form textarea {
+    margin: 14px 0;
+    padding: 5px 3px;
+    width:100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+}
